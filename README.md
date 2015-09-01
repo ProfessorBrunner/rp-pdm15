@@ -1,5 +1,7 @@
 # Practical Data Mining
 
+[![Join the chat at https://gitter.im/ProfessorBrunner/rp-pdm15](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ProfessorBrunner/rp-pdm15?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 University of Illinois, Research Park    
 Instructor: Robert J. Brunner    
 Summer/Fall 2015  
