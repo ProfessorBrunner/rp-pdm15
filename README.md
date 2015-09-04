@@ -16,13 +16,13 @@ The [Course Index](index.ipynb) page provides links to each week's lessons.
 Note: This is a __draft__ version that will be revised as we progress through the course.
 </font>
 
-### Week 1: Linear Regresssion
+### Week 1: Introduction to Data Exploration and Regresssion
 
-### Week 2: Recommendation Systems  
+### Week 2: TBD
 
-### Week 3: Classification Analysis
+### Week 3: TBD
 
-### Week 4: Clustering Analysis and Outlier Detection
+### Week 4: TBD
 
 -----
 
