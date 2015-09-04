@@ -1,7 +1,8 @@
-# Practical Data Science
+# Practical Data Mining
 
-Week 1: [Introduction to the Unix Command Line](http://nbviewer.ipython.org/github/ProfessorBrunner/rp-pds15/blob/master/Week1/introduction.ipynb)
+Week 1: Introduction to Data Exploration and Regression
 
-[Index of Topics](http://nbviewer.ipython.org/github/ProfessorBrunner/rp-pds15/blob/master/Week1/index.ipynb)
+
+[Index of Topics](index.ipynb)
 
 -----
