@@ -21,9 +21,11 @@ RUN apt-get update && \
     ttf-bitstream-vera \
     python3-bs4 \
     python3-tables 
- 
+
 RUN pip3 install pip --upgrade && \
-    pip3 install traitlets
+    pip3 install traitlets && \
+    pip3 install dask[complete]
+
 
 # data_scientist is our user
 # And we want to automatically start an IPython server
