@@ -1,6 +1,12 @@
 # Installs necessary packages for UI Research Park, Practical Data Mining course, 
 # Fall 2015
 # Modified from Dockerfile created by Edward Kim
+#
+# To build and push to Docker hub
+#
+# bash-3.2$ docker build -t lcdm/rppdm-standalone -f Dockerfile .
+# bash-3.2$ docker login
+# bash-3.2$ docker push lcdm/rppdm-standalone
 
 FROM ipython/scipystack
 
