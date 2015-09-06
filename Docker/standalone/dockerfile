@@ -1,8 +1,6 @@
 # Installs necessary packages for UI Research Park, Practical Data Mining course, 
 # Fall 2015
 # Modified from Dockerfile created by Edward Kim
-# Build as jupyter/jupyterhub-singleuser
-# Run with the DockerSpawner in JupyterHub
 
 FROM ipython/scipystack
 
@@ -22,13 +20,14 @@ RUN pip3 install pip --upgrade && \
     pip3 install traitlets
 
 # data_scientist is our user
-# And we want to automatically start a Jupyter server
+# And we want to automatically start an IPython server
+
+RUN useradd -m -u 1000 -s /bin/bash data_scientist
 
 ADD singleuser.sh /
 
-RUN chown 1000:1000 /singleuser.sh && \
-    chmod u+x /singleuser.sh && \
-    useradd -m -u 1000 -s /bin/bash data_scientist
+RUN chown 1000:1000 /singleuser.sh
+RUN chmod u+x /singleuser.sh
 
 USER data_scientist
 ENV HOME /home/data_scientist
@@ -45,4 +44,4 @@ EXPOSE 8888
 RUN echo 'export PS1="\e[1;34m\u@\h:\w$ \e[0m"' >> /home/data_scientist/.bashrc
 
 
-CMD ["sh", "/singleuser.sh"]
+CMD ["/singleuser.sh"]
