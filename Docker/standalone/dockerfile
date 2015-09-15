@@ -24,8 +24,8 @@ RUN apt-get update && \
 
 RUN pip3 install pip --upgrade && \
     pip3 install traitlets && \
-    pip3 install dask[complete]
-
+    pip3 install dask[complete] --upgrade && \
+    pip3 install castra graphviz
 
 # data_scientist is our user
 # And we want to automatically start an IPython server
