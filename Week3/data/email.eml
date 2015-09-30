@@ -1,0 +1,129 @@
+Delivered-To: professor.brunner@gmail.com
+Received: by 10.37.214.196 with SMTP id n187csp2182549ybg;
+        Tue, 29 Sep 2015 15:55:13 -0700 (PDT)
+X-Received: by 10.107.25.143 with SMTP id 137mr1640798ioz.52.1443567313622;
+        Tue, 29 Sep 2015 15:55:13 -0700 (PDT)
+Return-Path: <bounces+5126-72bd-professor.brunner=gmail.com@sendgrid.piazza.com>
+Received: from o1.sendgrid.piazza.com (o1.sendgrid.piazza.com. [75.126.253.244])
+        by mx.google.com with ESMTPS id w89si19140056ioi.187.2015.09.29.15.55.13
+        for <professor.brunner@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 29 Sep 2015 15:55:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+5126-72bd-professor.brunner=gmail.com@sendgrid.piazza.com designates 75.126.253.244 as permitted sender) client-ip=75.126.253.244;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounces+5126-72bd-professor.brunner=gmail.com@sendgrid.piazza.com designates 75.126.253.244 as permitted sender) smtp.mailfrom=bounces+5126-72bd-professor.brunner=gmail.com@sendgrid.piazza.com;
+       dkim=pass header.i=@sendgrid.piazza.com;
+       dkim=pass header.i=@sendgrid.info
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=sendgrid.piazza.com; 
+	h=from:to:in-reply-to:references:subject:mime-version:content-type; 
+	s=smtpapi; bh=luxJO3iHE4sFhriwcPAHUBf3Tbs=; b=JpnEY7kpriYgMtbeY3
+	4co4T7hWF37AzQxFuR79Hk+ryJsO8KT/7A7k5TeI6xji3I2T4it+RefGzbgBd86/
+	D199/6iHrgVstIXvetarTECdLlSiSoBCowJCHOAkcWDQ0tk637b5u1weqnATJ0aC
+	X2d43WLAna6ZPWIsu1fdQScHs=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=sendgrid.info; 
+	h=from:to:in-reply-to:references:subject:mime-version:content-type:x-feedback-id; 
+	s=smtpapi; bh=luxJO3iHE4sFhriwcPAHUBf3Tbs=; b=COYydyd9dh7YPVpAJk
+	lEyHNW9htsT67XbwhrFKm8iF7WQoIS5Wlap6V2yPavmA1SKPdaIQe5Jk4MMotKcf
+	VikzSRYgawD9tKjvK5qd4ah8K5JZF5QDxkjQNBgFLx4imXlp22gqmNYNjhvTU2BA
+	HAjkYsxu+Qbiq6Bt1OgSqUzuc=
+Received: by filter0565p1mdw1.sendgrid.net with SMTP id filter0565p1mdw1.13858.560B16AD18
+        2015-09-29 22:54:37.251862081 +0000 UTC
+Received: from smtp.sendgrid.net (ec2-54-234-180-130.compute-1.amazonaws.com [54.234.180.130])
+	by ismtpd0005p1iad1.sendgrid.net (SG) with ESMTP id 0p3sERzESl61aFvGGQy5Eg
+	for <professor.brunner@gmail.com>; Tue, 29 Sep 2015 22:54:37.484 +0000 (UTC)
+Date: Tue, 29 Sep 2015 22:54:37 +0000 (UTC)
+From: RP 101 on Piazza <no-reply@piazza.com>
+To: professor.brunner@gmail.com
+Message-ID: <if5yonj2fts4on@piazza.com>
+In-Reply-To: <if5yonj2fts4on@piazza.com>
+References: <if5yonj2fts4on@piazza.com>
+Subject: [Instr Note] New Docker Course Image
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_76729_388114962.1443567277475"
+X-SG-EID: U8uJFAXcSFmU+qpj3nVhLVLnF2vZKM+j2kQBYoeRY9279wMoOmCmRa2TGKgy0igqZsmugm8sdnbuUF
+ KV8EWUauSl3GwEk6uaSUbOHAa0kfLCgtd0uLts+sj7LKnW3JJBwnBh5n/bIfpx6vf0k1i0ImQKsU6D
+ sOYY+S6zVAytF29putDpB71rZwVc9jDagc4G
+X-Feedback-ID: 5126:vAH28t6HdIZMP7Uhftn/l/vRQaaq8j/jjL85c40T3Ao=:vAH28t6HdIZMP7Uhftn/l/vRQaaq8j/jjL85c40T3Ao=:SG
+
+------=_Part_76729_388114962.1443567277475
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Instructor Robert J. Brunner posted a new Note.=20
+
+New Docker Course Image
+
+We generated a new Docker course image. If you want to follow along on your=
+ laptop or work on the course Notebooks offline, you should download this n=
+ew image by issuing a=C2=A0
+
+docker pull lcdm/rppdm-standalone
+command at a Docker prompt (i.e., in a Docker Quickstart Terminal). On the =
+other hand, if you simply use the JupyterHub Server, no action is required =
+on your part (we have already updated the server).
+
+Let us know if you have any questions.
+
+Robert
+
+
+Go to https://piazza.com/class?cid=3Dif5yonj2fts4on&nid=3Die93g1v7xri4jg&to=
+ken=3DlnIDF9d7Seu to view. Search or link to this question with @16.=20=20
+
+Tell a colleague about Piazza. It's free, after all.
+
+Thanks,
+The Piazza Team
+--
+Contact us at team@piazza.com
+
+
+You're receiving this email because professor.brunner@gmail.com is enrolled=
+ in RP 101 at University of Illinois, Research Park. Go to https://piazza.c=
+om/login to sign in and manage your email preferences or proceed to https:/=
+/piazza.com/remove/lnIDF9d7Seu/ie93g1v7xri4jg to un-enroll from this class.=
+
+------=_Part_76729_388114962.1443567277475
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+Instructor Robert J. Brunner posted a new Note. <br><br>
+<b>New Docker Course Image</b><br>
+<br>
+<p>We generated a new Docker course image. If you want to follow along on y=
+our laptop or work on the course Notebooks offline, you should download thi=
+s new image by issuing a=C2=A0</p>
+<p></p>
+<pre>docker pull lcdm/rppdm-standalone</pre>
+<p>command at a Docker prompt (i.e., in a Docker Quickstart Terminal). On t=
+he other hand, if you simply use the JupyterHub Server, no action is requir=
+ed on your part (we have already updated the server).</p>
+<p></p>
+<p>Let us know if you have any questions.</p>
+<p></p>
+<p>Robert</p>
+<p></p>
+<br>
+<br>
+<a href=3D"https://piazza.com/class?cid=3Dif5yonj2fts4on&nid=3Die93g1v7xri4=
+jg&token=3DlnIDF9d7Seu">Click here</a> to view. Search or link to this ques=
+tion with @16.   <br><br>
+Tell a colleague about Piazza. It's free, after all.<br>
+<br>
+Thanks,<br>
+The Piazza Team<br>
+--<br>
+Contact us at team@piazza.com<br><br><br>
+<font size=3D'-2'>
+You're receiving this email because professor.brunner@gmail.com is enrolled=
+ in RP 101 at University of Illinois, Research Park. <a href=3D'https://pia=
+zza.com/login'>Sign in</a> to manage your email preferences or <a href=3D'h=
+ttps://piazza.com/remove/lnIDF9d7Seu/ie93g1v7xri4jg'>un-enroll</a> from thi=
+s class.</font>
+</html>
+
+------=_Part_76729_388114962.1443567277475--

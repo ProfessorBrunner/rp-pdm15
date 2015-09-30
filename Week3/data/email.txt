@@ -1,0 +1,31 @@
+From: RP 101 on Piazza <no-reply@piazza.com>
+Subject: [Instr Note] New Docker Course Image
+Date: September 29, 2015 at 5:54:37 PM CDT
+To: professor.brunner@gmail.com
+
+Instructor Robert J. Brunner posted a new Note. 
+
+New Docker Course Image
+
+We generated a new Docker course image. If you want to follow along on your laptop or work on the course Notebooks offline, you should download this new image by issuing a 
+
+docker pull lcdm/rppdm-standalone
+command at a Docker prompt (i.e., in a Docker Quickstart Terminal). On the other hand, if you simply use the JupyterHub Server, no action is required on your part (we have already updated the server).
+
+Let us know if you have any questions.
+
+Robert
+
+
+
+Click here to view. Search or link to this question with @16. 
+
+Tell a colleague about Piazza. It's free, after all.
+
+Thanks,
+The Piazza Team
+--
+Contact us at team@piazza.com
+
+
+You're receiving this email because professor.brunner@gmail.com is enrolled in RP 101 at University of Illinois, Research Park. Sign in to manage your email preferences or un-enroll from this class. 

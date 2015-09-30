@@ -22,10 +22,29 @@ RUN apt-get update && \
     python3-bs4 \
     python3-tables 
 
+# Install MongoDB
+RUN \
+  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
+  echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' > /etc/apt/sources.list.d/mongodb.list && \
+  apt-get update && \
+  apt-get install -y mongodb-org && \
+  rm -rf /var/lib/apt/lists/*
+
 RUN pip3 install pip --upgrade && \
     pip3 install traitlets && \
     pip3 install dask[complete] --upgrade && \
-    pip3 install castra graphviz
+    pip3 install castra graphviz && \
+    pip3 install -U nltk && \
+    pip3 install spacy && \
+    pip3 install tweepy && \
+    pip3 install pymongo
+
+RUN python3 -m spacy.en.download all
+
+# Define mountable directories.
+RUN chown 1000:1000 /usr/bin/mongod && \
+    mkdir -p /data/db && \
+    chown -R 1000:1000 /data/db
 
 # data_scientist is our user
 # And we want to automatically start an IPython server
@@ -50,6 +69,5 @@ EXPOSE 8888
 
 # set colors for terminal prompt
 RUN echo 'export PS1="\e[1;34m\u@\h:\w$ \e[0m"' >> /home/data_scientist/.bashrc
-
 
 CMD ["/singleuser.sh"]
